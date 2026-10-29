@@ -1,0 +1,196 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Whiteboard</title>
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-light: #3B82F6;
+            --bg: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #3B82F6;
+                --primary-light: #60A5FA;
+                --bg: #0F172A;
+                --card-bg: #1E293B;
+                --text-main: #F8FAFC;
+                --text-muted: #94A3B8;
+                --border: #334155;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+            padding: 40px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .highlight-box {
+            background-color: rgba(37, 99, 235, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Privacy Policy</div>
+            <h1>Whiteboard App</h1>
+            <div class="meta">Effective Date: October 29, 2026 &bull; Version 1.0</div>
+        </header>
+
+        <section>
+            <div class="highlight-box">
+                <p>Summary: Whiteboard is built with a strict local-first, privacy-by-design architecture. Your drawings, notes, shapes, and brainstorms remain 100% on your personal device. We do not collect, track, or share your personal data.</p>
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy explains how <strong>Whiteboard</strong> ("we", "our", or "the app") treats user data and information when you use our application. We respect your privacy and are committed to protecting it through transparent and privacy-friendly practices.</p>
+
+            <h2>2. Information Collection & Storage</h2>
+            <p><strong>We do not collect any personally identifiable information (PII).</strong></p>
+            <ul>
+                <li><strong>Drawings, Notes & Board Content:</strong> All strokes, sketches, geometric shapes, sticky notes, and text elements you create are saved directly to your device's internal SQLite database (via Android Room). None of your board content is uploaded to any cloud server or third-party service.</li>
+                <li><strong>No User Accounts:</strong> You do not need an account, email address, password, or login to use the app.</li>
+                <li><strong>No Analytics or Tracking:</strong> The app does not bundle tracking SDKs, device fingerprinting, advertising identifiers, or analytics libraries.</li>
+            </ul>
+
+            <h2>3. Device Permissions & File Sharing</h2>
+            <p>The app operates on the principle of least privilege:</p>
+            <ul>
+                <li><strong>Export & Sharing:</strong> When you choose to export your whiteboard canvas as a PNG image, the image is rendered locally and saved temporarily in the app's secure cache directory. The file is shared strictly via Android's secure <code>FileProvider</code> directly to the app you select (e.g., messaging, email, or drive).</li>
+                <li><strong>No Broad Storage Permissions:</strong> The app does not request or require broad storage access (such as <code>READ_EXTERNAL_STORAGE</code> or <code>MANAGE_EXTERNAL_STORAGE</code>).</li>
+                <li><strong>No Network Telemetry:</strong> The app does not transmit user data across the Internet.</li>
+            </ul>
+
+            <h2>4. Data Retention and Deletion</h2>
+            <p>You have full ownership and control over all content created in Whiteboard:</p>
+            <ul>
+                <li>You can delete individual whiteboards, sticky notes, or clear entire canvases at any time inside the app.</li>
+                <li>Uninstalling the application or clearing the app storage from Android Settings permanently removes all saved boards, drawings, and app cache from your device.</li>
+            </ul>
+
+            <h2>5. Third-Party Services</h2>
+            <p>Whiteboard does not share or sell your data to any third-party advertisers, data brokers, or marketing networks. When you utilize the native Android share sheet to export a whiteboard, the handling of the exported PNG image is governed by the privacy policy of the specific destination app you choose.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>Because Whiteboard does not collect personal information of any kind, our application is safe for all audiences, including children under 13 years of age, in compliance with COPPA (Children's Online Privacy Protection Act) and the EU GDPR.</p>
+
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
+            <p>Email: <a href="mailto:munjilalom984@gmail.com">munjilalom984@gmail.com</a></p>
+        </section>
+
+        <footer>
+            &copy; 2026 Whiteboard. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
